@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 32px;
+    background: linear-gradient(90deg, #060038 0%, #0b006b 100%);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #b700ff;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}

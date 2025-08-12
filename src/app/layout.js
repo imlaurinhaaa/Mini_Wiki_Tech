@@ -1,17 +1,13 @@
-import "./globals.css";
-
-export const metadata = {
-    title: "Meu Projeto Next.js",
-    description: "Projeto para mostrar tudo que eu sei",
-    icons: {
-        icon: "/icons/favicon.ico",
-    },
-};
+import Header from '../components/Header/Header'
+import './globals.css';
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="pt-BR">
-            <body>{children}</body>
+        <html lang="pt-br">
+            <body>
+                <Header title="" subtitle="" />
+                {children}
+            </body>
         </html>
     );
 }
