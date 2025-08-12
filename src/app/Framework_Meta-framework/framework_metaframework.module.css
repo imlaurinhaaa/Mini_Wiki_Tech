@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .container {
     display: flex;
     flex-direction: column;
@@ -20,6 +23,20 @@
     margin-top: 30px;
 }
 
+.title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .titleContent {
     display: flex;
     flex-direction: row;
@@ -38,10 +55,26 @@
 .info {
     display: flex;
     flex-direction: column;
+    background-color: #d8d8d8c5;
+    padding: 20px;
+    border-radius: 10px;
     width: 60%;
     font-size: 1.2rem;
     margin-right: 5px;
     line-height: 1.5;
-    color: #333;
     text-align: justify;
+}
+
+.textInfo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+}   
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 60%;
 }
