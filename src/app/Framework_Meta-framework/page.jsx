@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './framework_metaframework.module.css';
 import TitleContent from '../../components/titleContent';
+import CardFramework from '../../components/cardFramework';
 
 export default function Framework_MetaFramework() {
     return (
@@ -24,6 +25,13 @@ export default function Framework_MetaFramework() {
                 <p className={styles.textInfo}>
                     Evita começar o projeto do zero.
                 </p>
+            </div>
+            <TitleContent icon="/images/icon_andarna.png" title="Tipos de framework" />
+            <div className={styles.line}></div>
+            <div className={styles.cards}>
+                <CardFramework title="Front-end" description="Parte visual (ex: React, Vue.js, Angular)." />
+                <CardFramework title="Back-end" description="Parte do servidor (ex: Express.js, Django)." />
+                <CardFramework title="Full-stack" description="Junta front-end e back-end (ex: Meteor, Next.js)." />
             </div>
         </div>
     )
