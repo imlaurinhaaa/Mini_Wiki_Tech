@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../Cards/Cards.module.css';
+import styles from '../../styles/Cards.module.css';
 
 const Cards = ({ image, name, description  }) => (
     <div className={styles['product-card']}>
