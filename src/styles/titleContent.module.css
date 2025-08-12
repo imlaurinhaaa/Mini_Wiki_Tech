@@ -1,0 +1,14 @@
+.titleContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    align-items: center;
+    width: 60%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 20px;
+}

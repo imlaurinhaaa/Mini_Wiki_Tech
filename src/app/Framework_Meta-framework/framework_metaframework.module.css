@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 200px;
+    background: linear-gradient(to right, #f3e7c1, #e7a845);
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.titleContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    align-items: center;
+    width: 60%;
+}
+
+.line {
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(to right, #f3e7c1, #e7a845);
+    margin-bottom: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+}
