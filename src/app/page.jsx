@@ -1,95 +1,57 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react';
+import Cards from '../components/Cards/Cards'; 
+import styles from './page.module.css';      
 
-export default function Home() {
+
+const cardData = [
+  {
+    id: 1,
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80',
+    name: 'Relógio Clássico',
+    description: 'Um design atemporal que combina elegância e precisão para o seu dia a dia.',
+  },
+  {
+    id: 2,
+    image: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500&q=80',
+    name: 'Smartwatch Moderno',
+    description: 'Fique conectado e monitore sua saúde com a mais alta tecnologia no seu pulso.',
+  },
+  {
+    id: 3,
+    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&q=80',
+    name: 'Câmera Vintage',
+    description: 'Capture momentos com estilo e qualidade de imagem que evocam nostalgia.',
+  },
+
+  {
+    id: 4,
+    image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=500&q=80',
+    name: 'Fones de Ouvido Bluetooth',
+    description: 'Experimente a liberdade sem fio com qualidade de som excepcional.',
+  },
+
+  {
+    id: 5,
+    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&q=80',
+    name: 'Cadeira Ergonomica',
+    description: 'Conforto e estilo para o seu home office.',
+  }
+];
+
+export default function Page() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+    <main className={styles.pageContainer}>
+      <h1 className={styles.pageTitle}>Teste</h1>
+      <div className={styles.cardGrid}>
+        {cardData.map(card => (
+          <Cards
+            key={card.id}
+            image={card.image}
+            name={card.name}
+            description={card.description}
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        ))}
+      </div>
+    </main>
   );
 }
