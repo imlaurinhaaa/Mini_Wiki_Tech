@@ -1,0 +1,54 @@
+.vantagensDesvantagens {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.vantagensDesvantagens h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.vantagensDesvantagens ul {
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    padding-left: 0;
+}
+
+.vInfo ul li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 25px;
+}
+
+.vInfo ul li::before {
+    content: "✓";
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.dInfo ul li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 25px;
+}
+
+.dInfo ul li::before {
+    content: "✗";
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

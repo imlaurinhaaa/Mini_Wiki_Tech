@@ -1,0 +1,15 @@
+.exampleImgs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.img {
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.img:hover {
+    transform: scale(1.15);
+}
