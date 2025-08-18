@@ -8,10 +8,10 @@ import Image from 'next/image';
 
 const navLinks = [
     { name: 'Início', href: '/' },
-    { name: 'Sobre', href: '/sobre' },
-    { name: 'Projetos', href: '/projetos' },
-    { name: 'Serviços', href: '/servicos' },
-    { name: 'Contato', href: '/contato' },
+    { name: 'Arquivos', href: '/arquivos-especiais' },
+    { name: 'Bibliotecas', href: '/Bibliotecas' },
+    { name: 'Frameworks', href: '/Framework_Meta-framework' },
+    { name: 'Next.js 15', href: '/Nextjs15' },
 ];
 
 export default function Header({ title, subtitle }) {
