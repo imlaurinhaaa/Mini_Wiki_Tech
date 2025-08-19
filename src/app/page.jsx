@@ -6,42 +6,42 @@ import styles from './page.module.css';
 const cardData = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80',
-    name: 'Relógio Clássico',
-    description: 'Um design atemporal que combina elegância e precisão para o seu dia a dia.',
+    image: '/images/anacarolina.jpeg',
+    name: 'Ana Carolina',
+    description: 'Descubra mais sobre a tecnologia do Next.js',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500&q=80',
-    name: 'Smartwatch Moderno',
-    description: 'Fique conectado e monitore sua saúde com a mais alta tecnologia no seu pulso.',
+    image: '/images/andrelucca.jpeg',
+    name: 'André Lucca',
+    description: 'Navegue pelo menu para descobrir mais sobre outras tecnologias.',
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&q=80',
-    name: 'Câmera Vintage',
-    description: 'Capture momentos com estilo e qualidade de imagem que evocam nostalgia.',
+    image: '/images/evelyn.jpeg',
+    name: 'Evelyn Oliveira',
+    description: 'Explore a versatilidade de bibliotecas em suas aplicações.',
   },
 
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=500&q=80',
-    name: 'Fones de Ouvido Bluetooth',
-    description: 'Experimente a liberdade sem fio com qualidade de som excepcional.',
+    image: '/images/giovanna.jpeg',
+    name: 'Giovanna Alba',
+    description: 'Conheça Arquivos Especiais',
   },
 
   {
     id: 5,
-    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&q=80',
-    name: 'Cadeira Ergonomica',
-    description: 'Conforto e estilo para o seu home office.',
+    image: '/images/laura.jpg',
+    name: 'Laura Violla',
+    description: 'Descubra como implementar frameworks em suas aplicações.',
   }
 ];
 
 export default function Page() {
   return (
     <main className={styles.pageContainer}>
-      <h1 className={styles.pageTitle}>Teste</h1>
+      <h1 className={styles.pageTitle}>Mini Wiki Tech</h1>
       <div className={styles.cardGrid}>
         {cardData.map(card => (
           <Cards

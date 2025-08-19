@@ -11,7 +11,7 @@ export default function Framework_MetaFramework() {
             <div className={styles.banner}>
                 <h1 className={styles.title}>Framework e Meta-framework</h1>
                 <p className={styles.description}>
-                    Conheça o poder dos frameworks e meta-frameworks que transformam o desenvolvimento web.
+                    Explore frameworks e meta-frameworks que transformam o desenvolvimento web.
                 </p>
             </div>
             <TitleContent icon="/images/icon_andarna.png" title="O que é um Framework?" />

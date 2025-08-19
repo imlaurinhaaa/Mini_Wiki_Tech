@@ -5,7 +5,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="pt-br">
             <body>
-                <Header title="" subtitle="" />
+                <Header title="Mini Wiki Tech" subtitle="Pesquisa de Tecnologias" />
                 {children}
             </body>
         </html>

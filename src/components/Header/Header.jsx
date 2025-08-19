@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const navLinks = [
     { name: 'Início', href: '/' },
-    { name: 'Arquivos', href: '/arquivos-especiais' },
+    { name: 'Arquivos Especiais', href: '/arquivos-especiais' },
     { name: 'Bibliotecas', href: '/Bibliotecas' },
     { name: 'Frameworks', href: '/Framework_Meta-framework' },
     { name: 'Next.js 15', href: '/Nextjs15' },
